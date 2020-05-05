@@ -1,0 +1,15 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= docTitle %></title>
+</head>
+<body>
+
+    <% for(let val of Users) { %>
+        <p><%= val.username %></p>
+        <p><%= val.password %></p>
+    <% } %>
+</body>
+</html>
+

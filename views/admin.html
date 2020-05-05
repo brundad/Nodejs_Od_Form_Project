@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial;
+  color: white;
+}
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  left: 0;
+  background-color: #111;
+}
+
+.right {
+  right: 0;
+  background-color:grey;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
+</style>
+</head>
+<body>
+
+<div class="split left">
+  <div class="centered">
+    <h3>FACULTY</h3><br>
+    <form action="/facultysignupsuccess" method="POST">
+        <div class="container">
+          <h2>Sign Up</h2>
+          <label for="username"><b>NAME<br></b></label>
+          <input type="text" placeholder="Enter name" name="username" required><br>
+      
+          <label for="department"><b>DEPT<br></b></label>
+          <input type="text" placeholder="Enter dept" name="department" required><br>
+          <label for="email"><b>Email<br></b></label>
+          <input type="text" placeholder="Enter email" name="email" required><br>
+          <!-- <label for="username"><b>CONTACTNO<br></b></label>
+          <input type="text" placeholder="Enter contactno" name="username" required><br> -->
+      
+          <label for="password"><b>PASSWORD<br></b></label>
+          <input type="password" placeholder="Enter Password" name="password" required><br><br>
+          <div class="clearfix">
+           
+            <button type="submit" class="signupbtn">Sign Up</button>
+          </div>
+        </div>
+      </form>
+  </div>
+</div>
+
+<div class="split right">
+  <div class="centered">
+    <h3>HOD</h3>
+    <form action="/hodsignupsuccess" method="POST">
+        <div class="container">
+          <h2>Sign Up</h2>
+          <label for="username"><b>NAME<br></b></label>
+          <input type="text" placeholder="Enter name" name="username" required><br>
+      
+          <label for="department"><b>DEPT<br></b></label>
+          <input type="text" placeholder="Enter dept" name="department" required><br>
+          <label for="email"><b>Email<br></b></label>
+          <input type="text" placeholder="Enter email" name="email" required><br>
+          <!-- <label for="username"><b>CONTACTNO<br></b></label>
+          <input type="text" placeholder="Enter contactno" name="username" required><br> -->
+      
+          <label for="password"><b>PASSWORD<br></b></label>
+          <input type="password" placeholder="Enter Password" name="password" required><br><br>
+          <div class="clearfix">
+           
+            <button type="submit" class="signupbtn">Sign Up</button>
+          </div>
+        </div>
+      </form>
+  </div>
+</div>
+     
+</body>
+</html> 

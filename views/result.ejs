@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= docTitle %></title>
+</head>
+<body>
+
+    <button onclick="window.location.href='/applying';">Request</button> 
+    <button onclick="window.location.href='/status';">Status</button> 
+
+    <form action="/request" method="POST">
+        
+        <table>
+            <tr>
+                <td><input type="hidden" name="user" value="<%= Users.username %>"></td>
+            </tr>
+            <tr>
+                <td><input type="hidden" name="dep" value="<%= Users.department %>"></td>
+            </tr>
+            <tr>
+                <td><input type="hidden" name="yr" value="<%= Users.year %>"></td>
+            </tr>
+            <tr>
+                <td>From Date</td>
+                <td> : <input type="text" name="datefr" ></td>
+            </tr>
+            <tr>
+                <td>To Date</td>
+                <td> : <input type="text" name="dateto" ></td>
+            </tr>
+            <tr>
+                <td>Purpose</td>
+                <td> : <input type="text" name="purpose" ></td>
+            </tr>
+            <tr>
+                <td>Place</td>
+                <td> : <input type="text" name="place" ></td>
+            </tr>
+            <tr>
+                <td>Event Link</td>
+                <td> : <input type="text" name="link" ></td>
+            </tr>
+        </table>
+        <input type="submit" name="request" value="request">
+    </form>
+
+    
+</body>
+</html>
